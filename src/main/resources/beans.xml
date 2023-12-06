@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="knight" class="org.example.Knight">
+        <property name="quest" ref="dragon"/>
+    </bean>
+    <bean id="dragon" class="org.example.KillDragonQuest"></bean>
+    <bean id="princess" class="org.example.RescuingThePrincessQuest"></bean>
+    <bean id="yoyeyo" class="org.example.SingYoYoeQuest"></bean>
+
+</beans>
